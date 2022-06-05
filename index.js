@@ -19,16 +19,16 @@ const sorter = (arrayNama, cbSorting) => {
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
-const sortAscending = (arrayNama) => {
-  arrayNama.sort();
-  return arrayNama;
+const sortAscending = (arrayNamaCb) => {
+  arrayNamaCb.sort();
+  return arrayNamaCb;
 };
 
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
-const sortDescending = (arrayNama) => {
-  arrayNama.sort().reverse();
-  return arrayNama;
+const sortDescending = (arrayNamaCb) => {
+  arrayNamaCb.sort().reverse();
+  return arrayNamaCb;
 };
 
 // ! JANGAN DIMODIFIKASI
