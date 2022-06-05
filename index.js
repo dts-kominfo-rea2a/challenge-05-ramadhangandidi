@@ -7,14 +7,16 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // "2. Nama"
 // ...
 const sorter = (arrayNama, cbSorting) => {
-  let arrayHasil = [];
-  arrayHasil = cbSorting(arrayNama);
+  let arraySorted = [];
+  arraySorted = cbSorting(arrayNama);
 
-  for (i = 0; i < arrayHasil.length; i++) {
-    arrayHasil[i] = i + 1 + ". " + arrayHasil[i];
+  let arrayReturn = [];
+
+  for (i = 0; i < arraySorted.length; i++) {
+    arrayReturn.push(i + 1 + ". " + arraySorted[i]);
   }
 
-  return arrayHasil;
+  return arrayReturn;
 };
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
